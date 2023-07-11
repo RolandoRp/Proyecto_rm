@@ -1,0 +1,35 @@
+.carta{
+    background-color: #2b733f;
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: solid #4c6a25 10px;
+}
+
+
+.descripcion{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2em;
+   text-align: left;
+}
+.descripcion p{
+    margin:0;
+    padding: 10px 15px;
+}
+
+.descripcion p:nth-of-type(2n-1){
+    background: #245933;
+ }
+
+.botonc:hover{
+    background-color:#555;
+    cursor:pointer;
+    transition: 200ms ease-in-out background-color;
+}
+.carta:hover{
+    transform: scale(1.02);
+    transition: 200ms ease-out transform;
+}

@@ -1,0 +1,26 @@
+.App {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   color:whitesmoke;
+}
+
+:root{
+   background:#222;
+   padding:0;
+   margin:30px 0;
+}
+
+.logo-rm {
+   
+   display: flex;
+   align-items: center;
+   justify-content:flex-start;
+   
+   margin: 20px;
+}
+
+.rm {
+   height: 200px;
+}
+
