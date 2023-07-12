@@ -1,7 +1,7 @@
 const http = require('http');
 const data = require('./utils/data')
-http
-.createServer((request, response) => {
+
+http.createServer((request, response) => {
     response.setHeader('Access-Control-Allow-Origin', '*');
 
     if(request.url.includes('/rickandmorty/character')){
