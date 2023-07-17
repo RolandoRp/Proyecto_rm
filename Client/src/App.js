@@ -21,10 +21,13 @@ function App() {
    const [access, setAccess] = useState(false);
 
    const login = (userData) => {
-      if(userData.email === email && userData.password === password){
-         setAccess(true)
-         navigate('/home');
-      }
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+         const { access } = data;
+         setAccess(access);
+         access && navigate('/home');
+      });
    }
 
    useEffect(() => {
